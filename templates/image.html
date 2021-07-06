@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Index</title>
+</head>
+
+<body>
+    {% for data in user_images %}
+    <img src="data:image/jpg;base64, {{  data.img  }}" />
+    {% endfor %}
+</body>
+
+</html>
