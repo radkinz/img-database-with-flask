@@ -2,11 +2,15 @@
 <html>
 
 <head>
-    <title>Index</title>
+    <title>Image Fun</title>
     <link href="/static/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+    <form action="/">
+        <input type="submit" value="Go Back" />
+    </form>    
+
     <div id="imgcontainer">
         {% for data in user_images %}
         <img class="img" src="data:image/jpg;base64, {{  data.img  }}" />
