@@ -37,8 +37,7 @@ def upload():
     db.session.add(img)
     db.session.commit()
 
-    return 'Img Uploaded!'
-
+    return render_template('upload.html')
 
 @app.route('/display', methods=['POST'])
 def display_img():
