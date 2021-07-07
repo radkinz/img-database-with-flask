@@ -1,4 +1,4 @@
-from flask import Flask, request, Response, render_template
+from flask import Flask, request, render_template
 from werkzeug.utils import secure_filename
 
 from db import db_init, db
@@ -8,7 +8,8 @@ import base64
 
 app = app = Flask( 
   __name__,
-  template_folder='templates'
+  template_folder='templates',
+  static_folder='static'
 )
 
 # SQLAlchemy config. Read more: https://flask-sqlalchemy.palletsprojects.com/en/2.x/
